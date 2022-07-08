@@ -37,9 +37,8 @@ let pokemonList = [
 ];
 })();
 
-
-  pokemonRepository.forEach(function(pokemon){
-  document.write(pokemon.name +" "+"height is "+ pokemon.height +" m!"); 
+pokemonRepository.getAll().forEach(function(pokemon){
+    document.write(pokemon.name +" "+"height is "+ pokemon.height +" m!"); 
 
   if(pokemonList[i].height >= 1.7) {
       document.write("     - I\`m size L. Wow, that\`s big!"+ "<br>");
