@@ -48,5 +48,5 @@ let pokemonList = [
   } else {
       document.write("     - I\`m size S. " + "<br>");
   }
-})
+});
 
