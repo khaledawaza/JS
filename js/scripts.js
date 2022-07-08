@@ -13,6 +13,7 @@ let pokemonRepository = (function(){
     }
 })();
 
+(function(){
 let pokemonList = [
   {name: "charizard",
    height: 1.7,
@@ -34,6 +35,7 @@ let pokemonList = [
    height: 1.1,
    types: ["psychic","fire", "poison"]}
 ];
+})();
 
 
   pokemonRepository.forEach(function(pokemon){
