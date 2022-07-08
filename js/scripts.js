@@ -20,8 +20,10 @@ let pokemonList = [
    types: ["psychic","fire", "poison"]}
 ];
 
-for (let i=0; i<pokemonList.length; i++){
-  document.write(pokemonList[i].name +" "+"height is "+ pokemonList[i].height +" m!"); 
+
+  pokemonRepository.forEach(function(pokemon){
+  document.write(pokemon.name +" "+"height is "+ pokemon.height +" m!"); 
+
 
   if(pokemonList[i].height >= 1.7) {
       document.write("     - I\`m size L. Wow, that\`s big!"+ "<br>");
