@@ -35,13 +35,13 @@ let pokemonRepository = (function(){
 })();
 
 pokemonRepository.getAll().forEach(function(pokemon){
-    document.write(pokemon.name +" "+"height is "+ pokemon.height +" m!"); 
+    createElement(pokemon.name +" "+"height is "+ pokemon.height +" m!"); 
 
     if(pokemon.height >= 1.7) {
         document.write("     - I\`m size L. Wow, that\`s big!"+ "<br>");
     } else if(pokemon.height >=0.5 && pokemon.height <=1.1) {
-        document.write("     - I\`m size M. "+ "<br>");
+        createElement("     - I\`m size M. "+ "<br>");
     } else {
-        document.write("     - I\`m size S. " + "<br>");
+        createElement("     - I\`m size S. " + "<br>");
     }
 });
