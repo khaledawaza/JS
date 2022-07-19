@@ -45,12 +45,13 @@ let pokemonRepository = (function(){
         button.addEventListener("click", function(){
             showDetails(pokemon)
         });
+         
     }
     return {
-        add,
-        getAll,
-        addListItem
-    }
+        add: add,
+        getAll:getAll,
+        addListItem: addListItem
+    };
 })();
 
 
